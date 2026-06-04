@@ -1,0 +1,1264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== Meta Tags ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renna Faye Y. Estandarte — Aspiring Data Analyst &amp; 4th Year IS Student. Discover my projects in SQL, Excel, Python, and Power BI.">
+    <meta name="author" content="Renna">
+    <meta name="keywords" content="data analyst student, IS student, DNSC student, Excel, SQL, Tableau, Power BI, data cleaning, analytics">
+    <title>Renna Faye | Aspiring Data Analyst</title>
+
+    <!-- ===== Bootstrap 5 CSS (CDN) ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+
+    <!-- ===== FontAwesome 6 Icons (CDN) ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- ===== Google Fonts — Inter + Outfit ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- ===== Custom Stylesheet ===== -->
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0.2">
+</head>
+<body id="top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+    <!-- ===================================================================
+         NAVBAR — Sticky top, transparent → solid on scroll via JS
+    ==================================================================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <!-- Brand / Logo -->
+            <a class="navbar-brand fw-bold" href="#top">
+                Renna<span class="brand-accent">.</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-cta-nav" href="assets/files/resume.pdf" target="_blank" rel="noopener">
+                            <i class="fas fa-download me-1"></i> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================================================================
+         HERO SECTION
+    ==================================================================== -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <!-- Hero Text Content -->
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <p class="hero-greeting reveal">
+                        <span class="wave">👋</span> Hello, I'm
+                    </p>
+                    <h1 class="hero-title reveal">
+                        Renna Faye Y. Estandarte<br>
+                        <span class="highlight" id="typedText">Data Analyst</span>
+                        <span class="highlight" aria-hidden="true">|</span>
+                    </h1>
+                    <p class="hero-subtitle reveal">
+                        An Information Systems student at DNSC passionate about utilizing technology to build efficient solutions, improve business processes, and create meaningful digital innovations.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn-primary-custom">
+                            <i class="fas fa-chart-bar"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn-outline-custom">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero-socials reveal">
+                        <span class="line"></span>
+                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle">
+                            <i class="fab fa-kaggle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="hero-image-wrapper reveal-right">
+                        <div class="hero-image-container">
+                            <!-- Replace with your own profile photo -->
+                            <img src="assets/profile.jpg"
+                                 alt="Renna Faye Y. Estandarte — Profile Photo"
+                                 loading="eager">
+                        </div>
+                        <!-- Decorative floating dots -->
+                        <span class="hero-float-dot"></span>
+                        <span class="hero-float-dot"></span>
+                        <span class="hero-float-dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         ABOUT SECTION
+    ==================================================================== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Driven by Technology &amp; Purpose</h2>
+                <p class="section-subtitle">
+                    Information Systems student with hands-on experience in virtual assistance,
+                    data management, project coordination, and systems analysis.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- About Content -->
+                <div class="col-lg-8 reveal">
+                    <h3 class="about-title text-center mb-4">
+                        Hi, I'm Renna Faye Y. Estandarte — based in Panabo City, Philippines
+                    </h3>
+                    <p class="about-text text-center">
+                        I am a Bachelor of Science in Information Systems student at <strong>Davao del Norte State College (DNSC)</strong>.
+                        With experience in virtual assistance, data management, project coordination, and systems analysis,
+                        I am passionate about utilizing technology to develop efficient solutions and improve business processes.
+                    </p>
+                    <p class="about-text text-center mb-4">
+                        I continuously grow my technical and professional skills, driven by a genuine desire
+                        to create meaningful digital innovations and deliver real value to every team I work with.
+                    </p>
+                    <ul class="about-list mb-4">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> <span><strong>Virtual Assistance:</strong> Administrative support, scheduling, communication management, and document preparation.</span></li>
+                        <li><i class="fas fa-check-circle text-secondary me-2"></i> <span><strong>Systems Analysis:</strong> Analyzing business processes, identifying requirements, and recommending technology-driven improvements.</span></li>
+                        <li><i class="fas fa-check-circle text-accent me-2"></i> <span><strong>Project Management:</strong> Coordinating tasks, tracking timelines, and ensuring smooth project delivery from start to finish.</span></li>
+                    </ul>
+
+                    <!-- Statistics -->
+                    <div class="about-stats justify-content-center mt-5">
+                                                    <div class="stat-pill">
+                                <span class="stat-number">BS</span>
+                                <span class="stat-label">Information Systems</span>
+                            </div>
+                                                    <div class="stat-pill">
+                                <span class="stat-number">DNSC</span>
+                                <span class="stat-label">Davao del Norte State College</span>
+                            </div>
+                                                    <div class="stat-pill">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Core Specializations</span>
+                            </div>
+                                            </div>
+
+                    <!-- Download Resume Button -->
+                    <div class="text-center mt-4">
+                        <a href="assets/files/resume.pdf" target="_blank" rel="noopener" class="btn-primary-custom">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         SKILLS SECTION
+    ==================================================================== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">Skills & Expertise</span>
+                <h2 class="section-title">Tools & Technologies I Use</h2>
+                <p class="section-subtitle">
+                    A curated toolkit of languages, platforms, and analytics tools that I use
+                    to extract insights and deliver data-driven solutions.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="row g-4 stagger-children">
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="skill-card">
+                            <!-- Category Icon -->
+                            <div class="skill-icon icon-primary">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h5>Virtual Assistance</h5>
+                            <p>Providing administrative and remote support including scheduling, email management, data entry, document preparation, and client coordination.</p>
+
+                            <!-- Progress Bars -->
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Email &amp; Calendar Management</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="90"
+                                             aria-valuenow="90"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Data Entry &amp; Encoding</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="92"
+                                             aria-valuenow="92"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Document Preparation (MS Office)</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="88"
+                                             aria-valuenow="88"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Online Research &amp; Reporting</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="85"
+                                             aria-valuenow="85"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <!-- Tech Tags -->
+                            <div class="tech-tags mt-3">
+                                                                    <span class="tech-tag">MS Word</span>
+                                                                    <span class="tech-tag">MS Excel</span>
+                                                                    <span class="tech-tag">Google Workspace</span>
+                                                                    <span class="tech-tag">Zoom</span>
+                                                                    <span class="tech-tag">Canva</span>
+                                                                    <span class="tech-tag">Slack</span>
+                                                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="skill-card">
+                            <!-- Category Icon -->
+                            <div class="skill-icon icon-secondary">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <h5>Systems Analysis</h5>
+                            <p>Analyzing business processes, gathering requirements, creating flowcharts and DFDs, and recommending technology-driven improvements.</p>
+
+                            <!-- Progress Bars -->
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Business Process Analysis</span>
+                                        <span>82%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="82"
+                                             aria-valuenow="82"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Requirements Gathering</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="80"
+                                             aria-valuenow="80"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Flowcharts &amp; DFD Modeling</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="85"
+                                             aria-valuenow="85"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>System Documentation</span>
+                                        <span>83%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="83"
+                                             aria-valuenow="83"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <!-- Tech Tags -->
+                            <div class="tech-tags mt-3">
+                                                                    <span class="tech-tag">Lucidchart</span>
+                                                                    <span class="tech-tag">Draw.io</span>
+                                                                    <span class="tech-tag">UML</span>
+                                                                    <span class="tech-tag">MS Visio</span>
+                                                                    <span class="tech-tag">SQL</span>
+                                                                    <span class="tech-tag">ERD</span>
+                                                            </div>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="skill-card">
+                            <!-- Category Icon -->
+                            <div class="skill-icon icon-accent">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h5>Project Management</h5>
+                            <p>Planning, coordinating, and monitoring project tasks and timelines to ensure smooth and on-time delivery across academic and internship projects.</p>
+
+                            <!-- Progress Bars -->
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Task &amp; Timeline Planning</span>
+                                        <span>84%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-accent-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="84"
+                                             aria-valuenow="84"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Team Coordination</span>
+                                        <span>86%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-accent-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="86"
+                                             aria-valuenow="86"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Progress Tracking</span>
+                                        <span>82%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-accent-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="82"
+                                             aria-valuenow="82"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="skill-progress">
+                                    <div class="skill-progress-label">
+                                        <span>Stakeholder Reporting</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-accent-gradient"
+                                             role="progressbar"
+                                             style="width: 0%"
+                                             data-width="80"
+                                             aria-valuenow="80"
+                                             aria-valuemin="0"
+                                             aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <!-- Tech Tags -->
+                            <div class="tech-tags mt-3">
+                                                                    <span class="tech-tag">Trello</span>
+                                                                    <span class="tech-tag">Notion</span>
+                                                                    <span class="tech-tag">Google Drive</span>
+                                                                    <span class="tech-tag">MS Project</span>
+                                                                    <span class="tech-tag">Agile Basics</span>
+                                                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         CERTIFICATIONS SECTION
+    ==================================================================== -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">Certifications</span>
+                <h2 class="section-title">Credentials &amp; Recognitions</h2>
+                <p class="section-subtitle">
+                    Certificates and training completions from academic events, internships,
+                    and professional programs that validate my skills.
+                </p>
+            </div>
+
+            <!-- Certifications Grid -->
+            <div class="row g-4 stagger-children">
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-primary">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">OJT Program Completion Certificate</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                Davao del Norte State College                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                May 18, 2026                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/OJT Completion.jpg" 
+                                    data-bs-title="OJT Program Completion Certificate"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-secondary">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Capstone Project Completion (BranchSync)</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                SJ Printing Services &amp; DNSC                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                April 9, 2026                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/System Deployment Completion.jpg" 
+                                    data-bs-title="Capstone Project Completion (BranchSync)"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-accent">
+                                <i class="fas fa-award"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Certificate of Recognition (Facilitator)</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                CDITE XI &amp; CHED Region XI                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                March 17, 2026                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/RAISE Davao Certificate.png" 
+                                    data-bs-title="Certificate of Recognition (Facilitator)"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-primary">
+                                <i class="fab fa-python"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Statement of Achievement (Python Essentials 1)</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                Cisco Networking Academy                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                November 9, 2025                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/Statement of Achievement in Python Essentials.png" 
+                                    data-bs-title="Statement of Achievement (Python Essentials 1)"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-secondary">
+                                <i class="fab fa-python"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Python Essentials 1 Course Certificate</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                Cisco Networking Academy                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                November 9, 2025                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/Python Essentials 1.png" 
+                                    data-bs-title="Python Essentials 1 Course Certificate"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                                                            <span class="cert-featured-badge">
+                                    <i class="fas fa-award me-1"></i> Featured
+                                </span>
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-accent">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Certificate of Participation (MarineSentinel)</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                Davao del Norte State College                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                December 6, 2024                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/Startup Sundayag Event.jpg" 
+                                    data-bs-title="Certificate of Participation (MarineSentinel)"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                            
+                            <!-- Issuer Icon -->
+                            <div class="cert-icon cert-icon-primary">
+                                <i class="fas fa-film"></i>
+                            </div>
+
+                            <!-- Certificate Info -->
+                            <h5 class="cert-title">Certificate of Participation (Multimedia Festival)</h5>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building me-1"></i>
+                                Davao del Norte State College                            </p>
+                            <p class="cert-date">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                December 22, 2022                            </p>
+
+                            <!-- View Button -->
+                            <button type="button" 
+                                    class="cert-link border-0 w-100 justify-content-center cursor-pointer"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#certModal" 
+                                    data-bs-image="assets/Multi-Media Festival 2022.jpg" 
+                                    data-bs-title="Certificate of Participation (Multimedia Festival)"
+                                    style="background: transparent;">
+                                <i class="fas fa-eye me-1"></i> View Certificate
+                            </button>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         PROJECTS / PORTFOLIO SECTION
+    ==================================================================== -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A selection of recent work that showcases my skills in data analysis,
+                    visualization, and turning numbers into narratives.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4 stagger-children">
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                                                    <span class="project-badge">
+                                        <i class="fas fa-star me-1"></i> Featured
+                                    </span>
+                                
+                                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Virtual Assistant Operations Tracker — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Virtual Assistant Operations Tracker">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Virtual Assistant Operations Tracker">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Virtual Assistant Operations Tracker</h5>
+                                <p>Designed a structured Google Sheets tracker for managing daily VA tasks, client schedules, deadlines, and progress logs — improving personal workflow efficiency.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">Google Sheets</span>
+                                                                            <span class="project-tag">Google Workspace</span>
+                                                                            <span class="project-tag">Productivity</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                                                    <span class="project-badge">
+                                        <i class="fas fa-star me-1"></i> Featured
+                                    </span>
+                                
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Business Process Analysis Report — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Business Process Analysis Report">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Business Process Analysis Report">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Business Process Analysis Report</h5>
+                                <p>Internship Project: Conducted a systems analysis of an existing business process, produced a DFD, identified bottlenecks, and recommended technology-based process improvements.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">Systems Analysis</span>
+                                                                            <span class="project-tag">DFD</span>
+                                                                            <span class="project-tag">Documentation</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                                                    <span class="project-badge">
+                                        <i class="fas fa-star me-1"></i> Featured
+                                    </span>
+                                
+                                <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Project Timeline &amp; Task Tracker — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Project Timeline &amp; Task Tracker">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Project Timeline &amp; Task Tracker">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Project Timeline &amp; Task Tracker</h5>
+                                <p>Academic Capstone Project: Built a Trello-based project management workflow for a team of 5, with task cards, due dates, checklists, and a Gantt-style timeline in Excel.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">Trello</span>
+                                                                            <span class="project-tag">MS Excel</span>
+                                                                            <span class="project-tag">Project Management</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                
+                                <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Information System Requirements Spec — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Information System Requirements Spec">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Information System Requirements Spec">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Information System Requirements Spec</h5>
+                                <p>Academic Project: Created a full IS requirements specification document including use cases, ER diagram, and system scope definition for a proposed enrollment system.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">UML</span>
+                                                                            <span class="project-tag">ERD</span>
+                                                                            <span class="project-tag">MS Word</span>
+                                                                            <span class="project-tag">Draw.io</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                                                    <span class="project-badge">
+                                        <i class="fas fa-star me-1"></i> Featured
+                                    </span>
+                                
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Internship Progress Report Dashboard — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Internship Progress Report Dashboard">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Internship Progress Report Dashboard">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Internship Progress Report Dashboard</h5>
+                                <p>Created a structured internship documentation set including daily logs, summary reports, and a simple Excel tracker for monitoring weekly milestones and hours.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">Excel</span>
+                                                                            <span class="project-tag">Reporting</span>
+                                                                            <span class="project-tag">Documentation</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <!-- Project Image + Overlay -->
+                            <div class="project-image">
+                                
+                                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600&amp;h=400&amp;fit=crop"
+                                     alt="Client Communication &amp; Scheduling System — Project Screenshot"
+                                     loading="lazy">
+
+                                <!-- Hover Overlay -->
+                                <div class="project-overlay">
+                                    <a href="https://github.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Source Code"
+                                       aria-label="View source code for Client Communication &amp; Scheduling System">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://example.com/"
+                                       target="_blank" rel="noopener"
+                                       class="btn-icon" title="View Live Demo"
+                                       aria-label="View live demo of Client Communication &amp; Scheduling System">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project Info -->
+                            <div class="project-body">
+                                <h5>Client Communication &amp; Scheduling System</h5>
+                                <p>Academic Project: Designed a simple scheduling and client follow-up system using Google Calendar and Sheets to automate reminders and organize client meeting notes.</p>
+                                <div class="project-tags">
+                                                                            <span class="project-tag">Google Calendar</span>
+                                                                            <span class="project-tag">Google Sheets</span>
+                                                                            <span class="project-tag">Automation</span>
+                                                                    </div>
+                            </div>
+                        </article>
+                    </div>
+                            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         CONTACT SECTION
+    ==================================================================== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    Have a project, collaboration, or opportunity in mind?
+                    I'd love to hear from you. Drop me a message below.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info Column -->
+                <div class="col-lg-5 reveal-left">
+                    <div class="contact-info-card">
+                        <h4>Let's connect</h4>
+                        <p>
+                            I'm always open to discussions about projects, systems work,
+                            virtual assistance opportunities, or collaborations. Let's connect!
+                        </p>
+
+                        <!-- Email -->
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h6>Email</h6>
+                                <a href="mailto:estandartefaye@gmail.com" style="color:inherit">estandartefaye@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h6>Location</h6>
+                                <span>Panabo City, Philippines</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h6>Phone</h6>
+                                <a href="tel:+639922327636" style="color:inherit">+63 992 232 7636</a>
+                            </div>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h6>Availability</h6>
+                                <span>Open for opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="col-lg-7 reveal-right">
+                    <div class="contact-form-card">
+                        <form id="contactForm" method="POST" action="https://api.web3forms.com/submit" novalidate>
+                            <!-- Web3Forms Access Key (Get a free key from web3forms.com) -->
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                            <input type="hidden" name="from_name" value="Renna Faye Portfolio">
+                            <input type="hidden" name="subject" value="New Contact Form Submission">
+
+                            <div class="row g-3">
+                                <!-- Name Field -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="contactName"
+                                               name="name" placeholder="Your Name" required
+                                               minlength="2" maxlength="100"
+                                               autocomplete="name">
+                                        <label for="contactName">
+                                            <i class="fas fa-user me-1"></i> Your Name
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="contactEmail"
+                                               name="email" placeholder="your@email.com" required
+                                               autocomplete="email">
+                                        <label for="contactEmail">
+                                            <i class="fas fa-envelope me-1"></i> Email Address
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Subject Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="contactSubject"
+                                               name="subject" placeholder="Subject" required
+                                               minlength="2" maxlength="200">
+                                        <label for="contactSubject">
+                                            <i class="fas fa-tag me-1"></i> Subject
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Message Field -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="contactMessage"
+                                                  name="message" placeholder="Your message..."
+                                                  style="height: 160px" required
+                                                  minlength="10" maxlength="5000"></textarea>
+                                        <label for="contactMessage">
+                                            <i class="fas fa-comment-dots me-1"></i> Your Message
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12">
+                                    <button type="submit" class="btn-submit" id="submitBtn">
+                                        <span class="spinner-border spinner-border-sm d-none" role="status"
+                                              aria-hidden="true"></span>
+                                        <span class="btn-text">Send Message</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Form Status Message -->
+                        <div id="formStatus" class="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+         FOOTER
+    ==================================================================== -->
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <!-- Footer Top — Social + Quick Links -->
+            <div class="row gy-4 mb-5">
+                <!-- Brand Column -->
+                <div class="col-lg-4">
+                    <a href="#top" class="footer-brand d-inline-block mb-3">
+                        Renna<span class="brand-accent">.</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Transforming raw data into meaningful insights with passion and precision.
+                    </p>
+                    <!-- Social Icons -->
+                    <div class="footer-socials">
+                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-icon">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle" class="social-icon">
+                            <i class="fab fa-kaggle"></i>
+                        </a>
+                        <a href="mailto:hello@renna.dev" aria-label="Email" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-heading">Navigate</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Focus Areas -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-heading">Focus Areas</h6>
+                    <ul class="footer-links">
+                        <li><a href="#projects">Data Analysis</a></li>
+                        <li><a href="#projects">Dashboard Design</a></li>
+                        <li><a href="#projects">Data Visualization</a></li>
+                        <li><a href="#projects">SQL &amp; Databases</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-heading">Get in Touch</h6>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:estandartefaye@gmail.com">estandartefaye@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Panabo City, Philippines
+                        </li>
+                        <li>
+                            <i class="fas fa-clock me-2"></i>
+                            Open for opportunities
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Footer Bottom — Copyright -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-copy mb-0">
+                        &copy; 2026 Renna. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="footer-copy mb-0">
+                        Designed & built with <i class="fas fa-heart text-danger"></i> & data
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================
+         CERTIFICATE MODAL LIGHTBOX
+         =================================================================== -->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: var(--clr-bg-card); border: 1px solid var(--clr-border);">
+                <div class="modal-header border-0 pb-0 d-flex justify-content-between align-items-center">
+                    <h5 class="modal-title" id="certModalLabel" style="color: var(--clr-text-heading); font-family: var(--font-heading); font-weight: 700;">Certificate View</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1); opacity: 0.8;"></button>
+                </div>
+                <div class="modal-body text-center p-3">
+                    <img id="certModalImage" src="" alt="Certificate Image" class="img-fluid rounded" style="max-height: 80vh; object-fit: contain; box-shadow: var(--shadow-card);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Back to Top Button ===== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== Bootstrap 5 JS Bundle (CDN) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+
+    <!-- ===== Custom Scripts ===== -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

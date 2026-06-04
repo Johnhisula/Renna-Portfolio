@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ================================================================
-    // 7. CONTACT FORM — AJAX Submission
+    // 7. CONTACT FORM — Submission Handler (Supports AJAX / Fallback)
     // ================================================================
     if (contactForm) {
         contactForm.addEventListener('submit', async function (e) {
@@ -189,26 +189,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 const formData = new FormData(this);
+                const action = this.getAttribute('action') || 'contact-handler.php';
 
-                const response = await fetch('contact-handler.php', {
-                    method: 'POST',
-                    body: formData,
-                });
+                // Check if using Web3Forms (Static site helper)
+                if (action.includes('web3forms.com')) {
+                    const accessKey = formData.get('access_key');
+                    if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY' || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+                        // Web3Forms key is not configured, fall back to opening email client
+                        const name = formData.get('name');
+                        const email = formData.get('email');
+                        const subject = formData.get('subject');
+                        const message = formData.get('message');
+                        
+                        const mailtoBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+                        const mailtoUrl = `mailto:estandartefaye@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
+                        
+                        window.location.href = mailtoUrl;
 
-                const result = await response.json();
+                        formStatus.className = 'form-status success';
+                        formStatus.innerHTML = '<i class="fas fa-info-circle me-2"></i>Web3Forms key not configured. Opening your email client to send message...';
+                        formStatus.style.display = 'block';
+                        this.reset();
+                        return;
+                    }
 
-                if (result.success) {
-                    formStatus.className = 'form-status success';
-                    formStatus.innerHTML = '<i class="fas fa-check-circle me-2"></i>' + result.message;
-                    formStatus.style.display = 'block';
-                    this.reset();
+                    // AJAX submission to Web3Forms
+                    const json = JSON.stringify(Object.fromEntries(formData));
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    });
 
-                    // Update CSRF token if returned
-                    // (The page will need a reload for a fresh token in production)
+                    const result = await response.json();
+
+                    if (response.status === 200 || result.success) {
+                        formStatus.className = 'form-status success';
+                        formStatus.innerHTML = '<i class="fas fa-check-circle me-2"></i>Thank you! Your message has been sent successfully. I will get back to you soon.';
+                        formStatus.style.display = 'block';
+                        this.reset();
+                    } else {
+                        formStatus.className = 'form-status error';
+                        formStatus.innerHTML = '<i class="fas fa-exclamation-circle me-2"></i>' + (result.message || 'Submission failed.');
+                        formStatus.style.display = 'block';
+                    }
                 } else {
-                    formStatus.className = 'form-status error';
-                    formStatus.innerHTML = '<i class="fas fa-exclamation-circle me-2"></i>' + result.message;
-                    formStatus.style.display = 'block';
+                    // Fallback to PHP handler
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        formStatus.className = 'form-status success';
+                        formStatus.innerHTML = '<i class="fas fa-check-circle me-2"></i>' + result.message;
+                        formStatus.style.display = 'block';
+                        this.reset();
+                    } else {
+                        formStatus.className = 'form-status error';
+                        formStatus.innerHTML = '<i class="fas fa-exclamation-circle me-2"></i>' + result.message;
+                        formStatus.style.display = 'block';
+                    }
                 }
             } catch (error) {
                 formStatus.className = 'form-status error';

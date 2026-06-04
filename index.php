@@ -598,10 +598,11 @@ $certifications = [
                 <!-- Contact Form Column -->
                 <div class="col-lg-7 reveal-right">
                     <div class="contact-form-card">
-                        <form id="contactForm" method="POST" action="contact-handler.php" novalidate>
-                            <!-- CSRF Token (Hidden) -->
-                            <input type="hidden" name="csrf_token"
-                                   value="<?php echo e($_SESSION['csrf_token']); ?>">
+                        <form id="contactForm" method="POST" action="https://api.web3forms.com/submit" novalidate>
+                            <!-- Web3Forms Access Key (Get a free key from web3forms.com) -->
+                            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                            <input type="hidden" name="from_name" value="Renna Faye Portfolio">
+                            <input type="hidden" name="subject" value="New Contact Form Submission">
 
                             <div class="row g-3">
                                 <!-- Name Field -->
