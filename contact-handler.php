@@ -109,17 +109,21 @@ if (!empty($errors)) {
     sendResponse(false, implode(' ', $errors), 422);
 }
 
-// ── Process the Message ─────────────────────────────────────────────
-// In production, replace this block with actual mail() or a mailer library.
-// Example with mail():
-//
-// $to      = 'hello@renna.dev';
-// $headers = "From: {$email}\r\nReply-To: {$email}\r\nContent-Type: text/plain; charset=UTF-8";
-// $body    = "Name: {$name}\nEmail: {$email}\nSubject: {$subject}\n\nMessage:\n{$message}";
-// $sent    = mail($to, "Portfolio Contact: {$subject}", $body, $headers);
+// In production: send the message via PHP mail()
+$to      = 'estandartefaye@gmail.com';
+$headers = implode("\r\n", [
+    "From: Portfolio Contact <noreply@renna-portfolio.up.railway.app>",
+    "Reply-To: {$email}",
+    "X-Mailer: PHP/" . PHP_VERSION,
+    "Content-Type: text/plain; charset=UTF-8",
+]);
+$body = "New message from your portfolio contact form.\n\n";
+$body .= "Name:    {$name}\n";
+$body .= "Email:   {$email}\n";
+$body .= "Subject: {$subject}\n\n";
+$body .= "Message:\n{$message}\n";
 
-// Simulate successful email sending
-$sent = true;
+$sent = mail($to, "Portfolio Contact: {$subject}", $body, $headers);
 
 // Optional: Log the submission to a file for development/testing
 $logEntry = sprintf(

@@ -1,4 +1,4 @@
-# Local settings & Gemini
+# Local settings & editors
 .gemini/
 .vscode/
 .idea/
@@ -9,5 +9,6 @@ Thumbs.db
 
 # Logs & temp
 *.log
+logs/
 tmp/
 temp/
