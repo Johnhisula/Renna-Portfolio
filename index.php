@@ -72,6 +72,20 @@ $skillCategories = [
         ],
         'tags' => ['Trello', 'Notion', 'Google Drive', 'MS Project', 'Agile Basics'],
     ],
+    [
+        'icon'      => 'fa-star',
+        'iconClass' => 'icon-primary',
+        'title'     => 'Core Competencies',
+        'desc'      => 'Key personal soft skills and professional attributes that ensure quality delivery, teamwork, and client satisfaction.',
+        'skills'    => [
+            ['name' => 'Computer Literacy',            'level' => 95],
+            ['name' => 'Data Entry & QA',               'level' => 94],
+            ['name' => 'Time Management & Organization', 'level' => 92],
+            ['name' => 'Professionalism & Work Ethic',  'level' => 96],
+            ['name' => 'Adaptability & Teamwork',      'level' => 95],
+        ],
+        'tags' => ['Accuracy', 'Quality Assurance', 'Reliability', 'Collaboration', 'Soft Skills'],
+    ],
 ];
 
 // Projects data
@@ -242,17 +256,17 @@ $certifications = [
                     <!-- Social Links -->
                     <div class="hero-socials reveal">
                         <span class="line"></span>
-                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                        <a href="https://github.com/estandarterennafaye06" target="_blank" rel="noopener" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/renna-faye-estandarte-885698311/" target="_blank" rel="noopener" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
-                            <i class="fab fa-x-twitter"></i>
+                        <a href="https://www.facebook.com/rennafaye.estandarte06/" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle">
-                            <i class="fab fa-kaggle"></i>
+                        <a href="https://www.instagram.com/fayeestandarte?igsh=Z2oxZTJuY3BndGV1&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -324,7 +338,7 @@ $certifications = [
 
                     <!-- Download Resume Button -->
                     <div class="text-center mt-4">
-                        <a href="assets/files/resume.pdf" target="_blank" rel="noopener" class="btn-primary-custom">
+                        <a href="assets/ESTANDARTERF_CV.pdf" target="_blank" rel="noopener" class="btn-primary-custom">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
@@ -357,7 +371,7 @@ $certifications = [
                 foreach ($skillCategories as $catIndex => $category):
                     $progressClass = $progressClasses[$catIndex % count($progressClasses)];
                 ?>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="skill-card">
                             <!-- Category Icon -->
                             <div class="skill-icon <?php echo e($category['iconClass']); ?>">

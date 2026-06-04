@@ -64,7 +64,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-2">
-                        <a class="btn btn-cta-nav" href="assets/files/resume.pdf" target="_blank" rel="noopener">
+                        <a class="btn btn-cta-nav" href="assets/ESTANDARTERF_CV.pdf" target="_blank" rel="noopener">
                             <i class="fas fa-download me-1"></i> Resume
                         </a>
                     </li>

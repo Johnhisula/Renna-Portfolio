@@ -15,19 +15,19 @@
                     </p>
                     <!-- Social Icons -->
                     <div class="footer-socials">
-                        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+                        <a href="https://github.com/estandarterennafaye06" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+                        <a href="https://www.linkedin.com/in/renna-faye-estandarte-885698311/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-icon">
-                            <i class="fab fa-x-twitter"></i>
+                        <a href="https://www.facebook.com/rennafaye.estandarte06/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://kaggle.com/" target="_blank" rel="noopener" aria-label="Kaggle" class="social-icon">
-                            <i class="fab fa-kaggle"></i>
+                        <a href="https://www.instagram.com/fayeestandarte?igsh=Z2oxZTJuY3BndGV1&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="mailto:hello@renna.dev" aria-label="Email" class="social-icon">
+                        <a href="mailto:estandartefaye@gmail.com" aria-label="Email" class="social-icon">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
