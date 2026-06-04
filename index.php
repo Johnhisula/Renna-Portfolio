@@ -338,7 +338,7 @@ $certifications = [
 
                     <!-- Download Resume Button -->
                     <div class="text-center mt-4">
-                        <a href="assets/ESTANDARTERF_CV.pdf" target="_blank" rel="noopener" class="btn-primary-custom">
+                        <a href="assets/ESTANDARTERF_CV.pdf" download="ESTANDARTERF_CV.pdf" class="btn-primary-custom">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
